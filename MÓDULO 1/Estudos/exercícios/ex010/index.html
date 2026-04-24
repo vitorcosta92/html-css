@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links!</title>
+</head>
+<body>
+    <h1>Utilizando links externos</h1>
+    <p>Podemos acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público do Guanabara do GitHub.</a></p>
+    <p>Também podemos <a href="https://www.youtube.com/@cursoemvideo" target="_blank" rel="external">acessar o canal gratuito</a> do Guanabra no Youtube.</p>
+    <p>Neste parágrafo vou testar o atributo "_self" com o <a href="https://www.corinthians.com.br/home" target="_self" rel="external">link do site do Corinthians</a>.</p> <!--Como podemos observar, ele não leva para uma nova janela, ele se sobrepõe ao nosso site. Ou seja, usar isso quando queremos que o usuário permaneça no nosso site. Ah, e nesse caso é usar o _external e não o _self, já que o link é externo.-->
+    <p>Neste parágrafo vou fazer um teste ao fazer o usuário permanecer no meu site <a href="pagina2.html" target="_self" rel="next">indo para uma outra página</a>.</p>
+    <h1>Usando links internos(dentro do nosso servidor)</h1>
+    <p>Esse é um outro parágrafo, agora do Capítulo 10, Aula 2 do Curso em Vídeo, que <a href="pagina2.html" target="_self" rel="next">também vai levar para a página 2.</a></p>
+    <p>Acesse também a <a href="noticias/pag003.html" target="_self" rel="next">página de Notícias</a>. Quais notícias? Ninguém sabe!</p>
+    <h1>Links para downloads</h1>   
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="livro/meulivro.zip" type="application/zip">Se preferir, baixe o livro compactado</a></li>
+    </ul>
+</body>
+</html>

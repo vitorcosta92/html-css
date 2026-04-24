@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url(../fontes/Nunito-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BASE ===== */
+
+body {
+    background-color: #18D0DB;
+    font-family: 'nunito', Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-image: linear-gradient(to bottom, #10888F, rgb(50, 52, 50));
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+header > p {
+    color: white;
+    margin-bottom: 15px;
+}
+
+nav {
+    text-align: left;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== MAIN ===== */
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* ===== TIPOGRAFIA ===== */
+
+main h1 {
+    font-family: 'idroid';
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-family: 'idroid';
+    margin: 20px 0;
+}
+
+main h3 {
+    background-image: linear-gradient(to right, #0B6166, #f9f9f9);
+    padding: 5px 10px;
+    margin: 20px 0;
+    font-family: 'idroid';
+}
+
+main p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* ===== MIDIA ===== */
+
+.midia {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.midia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.midia iframe {
+    width: 100%;
+    max-width: 560px;
+}
+
+/* ===== ASIDE ===== */
+
+aside {
+    background-color: #14AFB8;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+aside h3 {
+    background: #073A3D;
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 10px -15px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'nunito';
+}
+
+aside p {
+    color: white;
+}
+
+/* ===== LISTA ===== */
+
+.lista-android {
+    column-count: 2;
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.lista-android li {
+    margin-bottom: 5px;
+}
+
+/* ===== LINKS ===== */
+
+aside a {
+    color: rgb(44, 25, 25);
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: grey;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+}

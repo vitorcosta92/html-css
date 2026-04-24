@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(151, 245, 245);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: lightpink;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;            
+        }
+
+        nav {
+            background-color: rgb(229, 211, 211);
+            padding: 2px;
+            box-shadow: 5px 6px 10px 1px rgba(0, 0, 0, 0.455);
+        
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: lightpink;
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+            box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.336);
+        }
+
+                article {
+            background-color: white;
+            padding: 5px;
+        }
+
+        article > aside {
+            background: gray;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>   
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio animi, veritatis fuga culpa at sunt perferendis officia autem id sapiente quos debitis? Totam incidunt ullam blanditiis possimus aliquid magnam.</p>
+                <aside>
+                    <p>Artigo escrito por Yuri Alberto</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Vitor Costa</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
