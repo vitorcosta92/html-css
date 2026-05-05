@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagens/pattern001.png);
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
