@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 30px;
+}
+
+/* CONTAINER (GRID 3x3) */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* QUADRADOS */
+.quadrado {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+/* HOVER (efeito leve) */
+.quadrado:hover {
+    transform: scale(1.05);
+    border-color: black;
+}
+
+/* IMAGENS */
+.quadrado img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* LEGENDA */
+.quadrado p {
+    margin-top: 10px;
+    font-weight: bold;
+}
