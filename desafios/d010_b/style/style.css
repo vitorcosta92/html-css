@@ -43,7 +43,7 @@ body {
 }
 
 a.externo::after {
-    content: '\1F517'
+    content: '\1F517';
 }
 
 main p {
