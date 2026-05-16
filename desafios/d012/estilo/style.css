@@ -26,7 +26,8 @@
     --fonte-sriracha: 'Sriracha', cursive;
 }
 
-body {
+html, body {
+    min-height: 100vh;
     font-family: var(--fonte-padrao);
     background-color: var(--cor0);
     line-height: 2em;
@@ -43,6 +44,7 @@ header {
 header > h1 {
     color: white;
     font-family: var(--fonte-passion-one);
+    font-variant: small-caps;
     font-size: 8vw;
     margin-top: 30px;
     padding-bottom: 20px;
@@ -53,17 +55,48 @@ header > p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1em;
+    padding-bottom: 50px;
 }
 
-header a {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    color: black;
+    padding-left: 30px;
+}
+
+section p {
+    font-family: var(--fonte-sriracha);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;        
+}
+
+.imagem {
+    background: center center no-repeat fixed;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.imagem p{
+    font-family: var(--fonte-sriracha);
     color: white;
-    font-family: var(--fonte-passion-one);
-    font-weight: normal;
-    font-size: 1.4em;
-    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 300px;
+    padding: 15px;
 }
 
-header a:hover {
-    color: var(--cor0);
-    text-decoration: underline;
+#imagem1 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+
+footer {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
