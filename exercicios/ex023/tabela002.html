@@ -11,6 +11,8 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -18,12 +20,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            background-color: darkgray;
+            padding: 10px;
+            
+        }
+
         thead {
             background-color: yellow;
         }
 
-        tfoot {
-            background-color: violet;
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: yellow;
+        }
+
+        tbody > tr>:nth-child(odd) {
+            background-color: lightskyblue;
+        }
+
+        tbody > tr>:nth-child(even) {
+            background-color: lightyellow;
         }
 
         td.num {
@@ -33,6 +53,10 @@
         td.pct {
             text-align: right;
         }
+
+        tfoot {
+            background-color: violet;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +64,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION = LEGENDA
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,11 +73,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>(%) da Pop. Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">(%) da Pop. Total</th>
             </tr>
         </thead>
         <tbody>
@@ -222,7 +248,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>213.421.037</strong></td>
                 <td class="pct"><strong>100%</strong></td>
             </tr>
